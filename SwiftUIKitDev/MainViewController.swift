@@ -14,15 +14,18 @@ class MainViewController: UIViewController {
     }
 }
 
+@IBDesignable
 public final class MainView: SUBaseView, SUView {
     private var label1: LabelView!
     private var label2: LabelView!
     
+    @IBInspectable
     public var text1: String? {
         get { label1.text }
         set { label1.text = newValue }
     }
     
+    @IBInspectable
     public var text2: String? {
         get { label2.text }
         set { label2.text = newValue }
